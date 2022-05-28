@@ -74,39 +74,38 @@ Template parameters
 |Notes |`notes` |Free-form notes for NFT |Unknown |optional |
 
 ## Example
-[TON NFT EXPLORER](https://explorer.tonnft.tools/collection/EQC3xU7M2blJMsJLgE5WRKeomCXwtlSXU_wHIL7q57MkcLy5)
 ```json
 {
     "name": "TON NFT Moscow Club",
-    "description": "NFT TON Events is a collection of unique events on The Open Network. Each NFT is a gift from the organizer for the participant, which confirms the information about attending the event. Each time you participate in an event, TON Events send a unique NFT, which is verified by a cryptographic record. These NFT are Non-Fungible Tokens and contain all information about the event.",
+    "description": "Встреча разработчиков, художников и инвесторов по теме развития в блокчейна TON. Разработчики презентуют свои проекты и делятся знаниями о блокчейне, инвесторы и продюсеры ищут проекты для вложения и преумножения капитала, а художники и новички обучаются премудростям блокчейна.",
     "image": "ipfs://CID/logo.png",
     "attributes": [
         {
-            "trait_type": "date",
+            "trait_type": "Дата",
             "value": "2022/05/29"
         },
         {
-            "trait_type": "time",
+            "trait_type": "Время",
             "value": "12:00"
         },
         {
-            "trait_type": "timezone",
-            "value": "GMT+3"
+            "trait_type": "Место",
+            "value": "Точка кипения"
         },
         {
-            "trait_type": "place",
-            "value": "Boiling Point"
+            "trait_type": "Адрес",
+            "value": "Москва, Малый Конюшковский пер., д. 2 (3 этаж)"
         },
         {
-            "trait_type": "coordinates",
-            "value": "55.758330032651834, 37.579751297813836"
+            "trait_type": "Тип",
+            "value": "Обсуждение"
         },
         {
-            "trait_type": "type",
-            "value": "talk"
+            "trait_type": "Тема",
+            "value": "Внедрение принципов блокчейна в экономику"
         },
         {
-            "trait_type": "website",
+            "trait_type": "URL",
             "value": "https://leader-id.ru/events/301817"
         }
     ]
