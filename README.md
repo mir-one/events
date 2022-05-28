@@ -74,12 +74,12 @@ Template parameters
 |Notes |`notes` |Free-form notes for NFT |Unknown |optional |
 
 ## Example
-
+[TON NFT EXPLORER](https://explorer.tonnft.tools/collection/EQC3xU7M2blJMsJLgE5WRKeomCXwtlSXU_wHIL7q57MkcLy5)
 ```json
 {
-    "name": "NFT: Тheory and Practice #0011",
-    "description": "NFT Events is a collection of unique events. Each NFT Tag is a gift from the organizer for the participant, which confirms the information about attending the event. Each time you participate in an event, NFT Events send a unique Tag, which is verified by a cryptographic record. These Tags are Non-Fungible Tokens and contain all information about the event.",
-    "image": "https://ipfs.io/ipfs/bafybeice6waf4d2a67gwuyzbhsr5rr5m4bfhd4pjnkzsfhfihkudfgxie4/logo.png",
+    "name": "NFT: Тheory and Practice",
+    "description": "NFT TON Events is a collection of unique events on The Open Network. Each NFT is a gift from the organizer for the participant, which confirms the information about attending the event. Each time you participate in an event, TON Events send a unique NFT, which is verified by a cryptographic record. These NFT are Non-Fungible Tokens and contain all information about the event.",
+    "image": "ipfs://bafybeice6waf4d2a67gwuyzbhsr5rr5m4bfhd4pjnkzsfhfihkudfgxie4/logo.png",
     "attributes": [
         {
             "trait_type": "Date",
