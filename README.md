@@ -5,9 +5,7 @@ NFT TON Events is a collection of unique events on The Open Network. Each NFT is
 ```
 title                    // Title to display
 image                    // 
-image_upright            // 
-image_alt                // 
-caption                  // 
+description              // 
 native_name              // 
 native_name_lang         // 
 english_name             // 
@@ -46,8 +44,7 @@ Template parameters
 |Part of |`partof` |no description |Unknown |optional |
 |Logo |`logo` |Logo filename |File |optional |
 |Logo size |`logo_size` |no description |Unknown |optional |
-|Logo alt text |`logo_alt` |A description of the logo intended for the blind; say what you see. No formatting. Example: Black text reading "example" on white circle. |String |optional |
-|Logo caption |`logo_caption` |Caption to display under the logo. |Line |optional |
+|Description |`description` |Description to event. |Line |optional |
 |date |`date` |start date \|YYYY\|MM\|DD for the date of a single-day event or start and end dates \|YYYY\|MM\|DD\|YYYY\|MM\|DD for multi-day events |Unknown |optional |
 |time |`time` |no description |Unknown |optional |
 |timezone |`timezone` |no description |Unknown |optional |
@@ -75,3 +72,31 @@ Template parameters
 |blank2_data |`blank_data` |no description |Unknown |optional |
 |Website |`website` `URL` |Use URL (ex: URL\|example.com) |Unknown |optional |
 |Notes |`notes` |Free-form notes for NFT |Unknown |optional |
+
+## Example
+
+```json
+{
+    "name": "NFT: Тheory and Practice #0011",
+    "description": "NFT Events is a collection of unique events. Each NFT Tag is a gift from the organizer for the participant, which confirms the information about attending the event. Each time you participate in an event, NFT Events send a unique Tag, which is verified by a cryptographic record. These Tags are Non-Fungible Tokens and contain all information about the event.",
+    "image": "https://ipfs.io/ipfs/bafybeice6waf4d2a67gwuyzbhsr5rr5m4bfhd4pjnkzsfhfihkudfgxie4/logo.png",
+    "attributes": [
+        {
+            "trait_type": "Date",
+            "value": "24.05.2022"
+        },
+        {
+            "trait_type": "Type",
+            "value": "Lecture"
+        },
+                {
+            "trait_type": "Topic",
+            "value": "NFT: Theory and practice, and how to work with it"
+        },
+        {
+            "trait_type": "Address",
+            "value": "Moscow, Koroviy Val, 3, building 5"
+        }
+    ]
+}
+```
