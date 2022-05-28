@@ -13,28 +13,65 @@ native_name_lang         //
 english_name             // 
 time                     // 
 timezone                 // 
-duration                 // duration|h//x|m//x|s//x or time interval|date1|date2|options
+duration                 // duration|h=x|m=x|s=x or time interval|date1|date2|options
 date                     // start date|YYYY|MM|DD or start and end dates|YYYY|MM|DD|YYYY|MM|DD
 venue                    // 
 location                 // 
-coordinates              // coord|LAT|LON|region:XXXX_type:event|display//inline,title
+coordinates              // coord|LAT|LON|region:XXXX_type:event|display=inline,title
 type                     // 
 theme                    // 
 cause                    // 
 motive                   // 
 target                   // 
-budget                   // 
-patron                   // or patrons// 
-organisers               // or organizers// 
+patron                   // or patrons
+organisers               // or organizers
 participants             // 
 outcome                  // 
 awards                   // 
 url                      // 
-blank_label              // or |blank_data// 
-blank1_label             // or |blank1_data// 
-blank2_label             // or |blank2_data// 
+blank_label              // or |blank_data
+blank1_label             // or |blank1_data
+blank2_label             // or |blank2_data
 website                  // URL|example.com
 notes                    // 
 ```
+## Parameters
+Template parameters
 
-
+|Parameter| |Description |Type |Status |
+|-|-|-|-|-|
+|Title |`title` `event` `name` `Event_Name` |Name of the event, if omitted, the page name will be used |Line |optional |
+|Image |`image` `image_name` `Image_Name` |Name of the image of the event |File |suggested |
+|Image size |`image_size` `Imagesize` |Image size in pixels |Unknown |deprecated |
+|Part of |`partof` |no description |Unknown |optional |
+|Logo |`logo` |Logo filename |File |optional |
+|Logo size |`logo_size` |no description |Unknown |optional |
+|Logo alt text |`logo_alt` |A description of the logo intended for the blind; say what you see. No formatting. Example: Black text reading "example" on white circle. |String |optional |
+|Logo caption |`logo_caption` |Caption to display under the logo. |Line |optional |
+|date |`date` |start date \|YYYY\|MM\|DD for the date of a single-day event or start and end dates \|YYYY\|MM\|DD\|YYYY\|MM\|DD for multi-day events |Unknown |optional |
+|time |`time` |no description |Unknown |optional |
+|timezone |`timezone` |no description |Unknown |optional |
+|duration |`duration` |no description |Unknown |optional |
+|Venue |`venue` |name of the particular venue (alternative to location) |Unknown |optional |
+|place |`place` |no description |Unknown |optional |
+|Location |`Location` `location` |The location of the event |Line |optional |
+|Coordinates |`coordinates` |Use, with display=inline,title (ex: \|LAT\|LON\|region:XXXX_type:event\|display=inline,title) |Unknown |optional |
+|type |`type` |no description |Unknown |optional |
+|theme |`theme` |no description |Unknown |optional |
+|cause |`cause` |no description |Unknown |optional |
+|motive |`motive` |no description |Unknown |optional |
+|target |`target` |no description |Unknown |optional |
+|Patrons |`patron` `patrons` | | |optional |
+|Organizers |`organizers` `organisers` |no description |Unknown |optional |
+|Participants |`participants` |The typical number of participants |Line |optional |
+|Outcome |`outcome` `result` |no description |Line |optional |
+|awards |`awards` |no description |Unknown |optional |
+|url |`url` |no description |Unknown |optional |
+|blank_label |`blank_label` |no description |Unknown |optional |
+|blank_data |`blank_data` |no description |Unknown |optional |
+|blank1_label |`blank_label` |no description |Unknown |optional |
+|blank1_data |`blank_data` |no description |Unknown |optional |
+|blank2_label |`blank_label` |no description |Unknown |optional |
+|blank2_data |`blank_data` |no description |Unknown |optional |
+|Website |`website` `URL` |Use URL (ex: URL\|example.com) |Unknown |optional |
+|Notes |`notes` |Free-form notes for NFT |Unknown |optional |
