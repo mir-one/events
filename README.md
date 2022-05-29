@@ -74,6 +74,7 @@ Template parameters
 |Notes |`notes` |Free-form notes for NFT |Unknown |optional |
 
 ## Example
+[Collection TON NFT Moscow Club 29.05.2022](https://getgems.io/collection/EQDy4Tl27A-bfPPLc1YMaAICENkkZzABT5jBg7kQKlgNhYOG)
 ```json
 {
     "name": "TON NFT Moscow Club",
